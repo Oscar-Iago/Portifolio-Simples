@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-image: url(https://wallpaperaccess.com/full/2346347.jpg);
+}
+
+.header {
+    height: 100vh;
+    width: 98.8vw;
+    background-image: url(./iagu.jpg);
+    background-repeat: no-repeat;
+    background-position-x: right ;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.legenda {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.row {
+    margin-bottom: 160px;
+    margin-top: 40px;
+}
+
+.footer {
+    width: 100px;
+    height: 100px;
+    display: flex;
+
+}
+
+.navbar-brand {
+    padding-right: 660px;
+}
+
+.nav-link {
+    padding-left: 100px;
+}

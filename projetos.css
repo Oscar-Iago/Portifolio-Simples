@@ -1,0 +1,46 @@
+.nav-item {
+    margin-left: 980px;
+    display: flex;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    position: relative;
+    padding-bottom: 100px;
+    background-image: url(https://wallpaperaccess.com/full/1488765.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cardi {
+    padding-left: 350px;
+    margin-top: 200px;
+    margin-bottom: 400px;
+    align-items: center;  
+}
+
+
+
+.footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.card-text {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.card-title {
+    text-align: center;
+    padding-bottom: 0.5rem;
+    
+}

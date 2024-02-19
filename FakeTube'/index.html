@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube2</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilo.css">
+
+
+</head>
+
+<body onload="gerarListaInteresse()">
+
+  <!-- sidebar -->
+  <!-- menu de navegação -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img width="45" height="45"
+          src="https://www.freeiconspng.com/thumbs/youtube-logo-png/hd-youtube-logo-png-transparent-background-20.png"
+          alt="">
+        <span>Esdeath.mp4</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="d-flex ms-auto me-auto">
+          <div class="input-group">
+            <input id="pesquisar" type="text" class="form-control bg-dark" placeholder="Pesquisar"
+              aria-label="Recipient's username" aria-describedby="iconPesquisa">
+            <span class="input-group-text bg-dark" id="iconPesquisa">Buscar</span>
+          </div>
+
+          <a class="nav-link" aria-current="page" href="#">Voz</a>
+
+        </form>
+
+        <ul class="navbar-nav me-10 mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aplicacoes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Aparencia: Escuro </a></li>
+              <li><a class="dropdown-item" href="#">Idioma</a></li>
+              <li><a class="dropdown-item" href="#">Local</a></li>
+              <li><a class="dropdown-item" href="#">Configuracoes</a></li>
+              <li><a class="dropdown-item" href="#">Ajuda</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Modo Restrito</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <button class=" btn btn-outline-primary ">Fazer Login</button>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- menu com botões de temas  -->
+   <div id="lista-it" class="lista-int bg-dark py-3 pl-5 border-top">
+    
+   </div>
+
+
+  <!-- anuncio -->
+   <div class="anuncio">
+     <img class="img-fluid" src="https://picsum.photos/2160/400" width="1905" height="400" alt="">
+   </div>
+  <!-- grade de vídeos -->
+  <div class="row">
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+          class="card-img-top" alt="thumbnail" width="120" height="180">
+        <div class="card-body">
+          <h5 class="card-title">
+            <img src="https://picsum.photos/40/40" alt="">
+            Titutlo do Vídeo
+          </h5>
+          <p class="card-text">
+          <p>Nome do Canal</p>
+          <p>8B Vizualizações . há 3 meses</p>
+          </p>
+          <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- card de videos-->
+  <!-- <div class="card bg-dark ml-2 mp-2 text-white" style="min-width: 18rem;">
+    <img src="https://th.bing.com/th/id/OIP.-iZ-lfjVcZjQTuY8O9rw0gHaE8?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+      class="card-img-top" alt="thumbnail" width="120" height="180">
+    <div class="card-body">
+      <h5 class="card-title">
+        <img src="https://picsum.photos/40/40" alt="">
+        Titutlo do Vídeo
+      </h5>
+      <p class="card-text">
+      <p>Nome do Canal</p>
+      <p>8B Vizualizações . há 3 meses</p>
+      </p>
+      <button type="button" class="btn btn-outline-danger btn-sm" disable>AO VIVO AGORA</button>
+    </div>
+  </div> -->
+
+  <!-- botão de carregar mais vídeos -->
+  <div class="d-flex flex-column justify-content-center align-items-center m-4">
+  <p class="fs-6 fw-bolder text-muted" id="carregar"></p>
+  <button onclick="carregarVideos()" class="btn btn-outline-primary">
+    Carregar Mais Videos</button>
+   
+  </div>
+
+
+  <!-- footer -->
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="funcoes.js"></script>
+</body>
+
+</html>

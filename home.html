@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+
+<body>
+
+    <header class="menu">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img width="45" height="45"
+                        src="https://static.wikia.nocookie.net/valorant_esports_gamepedia_en/images/4/45/FURIA_Esportslogo_profile.png/revision/latest?cb=20210208214707"
+                        alt="">
+                    <span>Oscar Iago Ortiz Britez</span>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre mim</a> <!-- era para rolar a pagina bem smooth um pouquinho para baixo -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Redes Sociais</a> <!-- era para ir para o footer mas eu nao sei como -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                </div>
+            </div>
+        </nav>
+                <div class="header">
+                    <h1>Oscar Iago Ortiz Britez</h1>
+                    <h2>Infórmatica 3 Vespertino</h2>
+                    <p class="legenda">Eu me chamo Oscar Iago Ortiz Britez, sou aluno do IFMS <br> 
+                        campus Ponta Porã, gosto de jogar video games, ler livros, etc. <br>
+                         e aqui esta meu portfolio com 
+                         alguns dos meu projetos nas mais <br> 
+                         diversas materias do Ensino Médio <br>
+                        (email:oscariagoortizbritez@gmail.com)</p> 
+                </div> 
+
+
+        <main class="container">
+            <section id="projetos">
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 me-10 mb-2 mb-lg-0">
+                    <div class="col">
+                      <div class="card h-100 ">
+                        <img src="https://www.jose-aguilar.com/blog/wp-content/uploads/2019/10/calculadora-simple-javascript.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-dark text-white">
+                          <h5 class="card-title"><a href="calculadora.html">
+                            Calculadora em JS</a></h5> 
+                          <p class="card-text">Aqui neste projeto eu desenvolvi uma calculadora simples a base de JavaScript e para deixar as coisas um pouco mais ajeitadas utilizei o HTML e CSS.</p>
+                          <form method="get" action="rara/calculadora.rar">
+                              <button class="btn btn-primary" type="submit">Download</button>
+                              </form>
+                        </div>
+                       
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="https://2.bp.blogspot.com/-LpVFfV4IMpA/XhDreTPWI6I/AAAAAAAA0Ik/L9lVYtkRITAxlZNF8_YVWAGyYwKYrLvcgCLcBGAsYHQ/s300/js-tabuada.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-dark text-white">
+                          <h5 class="card-title"><a href="tabuada.html">Tabuada em JS</a></h5>
+                          <p class="card-text">Este processo foi quase igual ao primeiro, mas neste era necessario apenas a tabuada e não era preciso o uso de HTML e CSS foi tudo produzido no JavaScript e testado no console.log.</p>
+                          <form method="get" action="rara/tabuada.rar">
+                            <button class="btn btn-primary" type="submit">Download</button>
+                            </form>
+                        </div>
+                       
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+                        <div class="card-body bg-dark text-white">
+                          <h5 class="card-title"><a href="fatorial.html">Fatorial em JS</a></h5>
+                          <p class="card-text">Este é igual ao outro mas ao invez da multiplicação eu tive que fazer o fatorial, sem CSS e HTML.</p>
+                          <form method="get" action="rara/fatorial.rar">
+                            <button class="btn btn-primary" type="submit">Download</button>
+                            </form>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-cols-1 row-cols-md-3 g-4 ml-2 mp-2">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="https://www.youtube.com/img/desktop/yt_1200.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-dark text-white">
+                          <h5 class="card-title"><a href="tube.html">FakeTube</a></h5>
+                          <p class="card-text">Nos recriamos de forma um pouco diferente o Youtube, com a ajuda do Bootstrap para facilitar a nossas vidas (obrigado Bootstarp, nos te amamos).</p>
+                          <form method="get" action="rara/tube.rar">
+                            <button class="btn btn-primary" type="submit">Download</button>
+                            </form>                        
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="https://media.istockphoto.com/photos/nutrigenetics-concept-dna-strand-made-with-healthy-fresh-vegetables-picture-id1042441164" class="card-img-top" alt="...">
+                        <div class="card-body bg-dark text-white">
+                          <h5 class="card-title"><a href="dna.html">DNA de um Fruta</a></h5>
+                          <p class="card-text">Na aula pratica de Biologia, nos fomos ao laboratorio retirar uma pequena fatia do DNA de uma fruta a sua escolha.</p>
+                          <form method="get" action="rara/dna.rar">
+                            <button class="btn btn-primary" type="submit">Download</button>
+                            </form>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="https://www.researchgate.net/profile/Michel-Constantino/publication/303786356/figure/fig3/AS:369052355710978@1465000346309/Figura-3-Classifi-cacao-e-taxa-de-crescimento-do-IDH-dos-municipios-no-Mato-Grosso-do.png" class="card-img-top" alt="...">
+                        <div class="card-body bg-dark text-white">
+                          <h5 class="card-title"><a href="geo.html">Seminario de Geografia</a></h5>
+                          <p class="card-text">Era necessario fazer um seminario em grupo de Geografica a partir de um tema sorteado pelo professor.</p>
+                          <form method="get" action="rara/geo.rar">
+                            <button class="btn btn-primary" type="submit">Download</button>
+                            </form>
+                        </div>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+
+            </section>
+
+        </main>
+
+
+        <footer class="bg-dark text-center text-white">
+            <div class="container p-4 pb-0">
+              <section class="mb-4">
+                
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/oscariago.ortizbritez" role="button"
+                  ><i class="bi bi-facebook"></i>
+                </a>
+          
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/oscariago1" role="button"
+                  ><i class="bi bi-twitter"></i>
+                </a>
+          
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/oscar.iago/" role="button"
+                  ><i class="bi bi-instagram"></i>
+                </a>
+          
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.youtube.com/channel/UClzWQkaHh-HWuWaFLOfXZGw" role="button"
+                  ><i class="bi bi-youtube"></i>
+                </a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitch.tv/xaropinho_de_banana/videos" role="button"
+                  ><i class="bi bi-twitch"></i>
+                </a>
+                    
+              </section>
+              
+            </div>
+            
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              <img width="45" height="45"
+              src="https://static.wikia.nocookie.net/valorant_esports_gamepedia_en/images/4/45/FURIA_Esportslogo_profile.png/revision/latest?cb=20210208214707"
+               alt="">
+              By: Oscar Iago 
+              
+            </div>
+            
+          </footer>
+
+
+</body>
+
+</html>
